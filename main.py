@@ -4,7 +4,7 @@ import os
 
 lat = -0.947083
 lon = 100.417183
-API_key = "16c80aa7623d583b2827000e60b49915"
+API_key = "xxxxxxxxxxxxxxxx"
 OWM_Endpoint = "https://api.openweathermap.org/data/3.0/onecall"
 
 weather_param = {
