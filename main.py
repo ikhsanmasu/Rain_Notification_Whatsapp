@@ -4,7 +4,7 @@ import os
 
 lat = -0.947083
 lon = 100.417183
-API_key = "xxxxxxxxxxxxxxxx"
+API_key = {open weather api key}
 OWM_Endpoint = "https://api.openweathermap.org/data/3.0/onecall"
 
 weather_param = {
@@ -33,8 +33,8 @@ client = Client(account_sid, auth_token)
 if will_rain:
     message = client.messages.create(
                                   body='Hari ini akan hujan, bawalah payung!',
-                                  from_='whatsapp:+xxxxxxxxxxx',
-                                  to='whatsapp:xxxxxxxxxxxx'
+                                  from_='whatsapp:{your twilio phone number}',
+                                  to='whatsapp:{Number you want to send the message}'
                               )
     print(message.status)
 
